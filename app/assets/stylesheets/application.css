@@ -1,0 +1,36 @@
+body{
+    background-color: lightblue;
+    color: black;
+}
+.mainItem{
+    border:solid white;
+    text-align:center;
+}
+.showBtn{
+    border:solid blue;
+    border-radius:22px;
+    padding-left:16px;
+    padding-right:16px;
+    text-decoration: none;
+    text-align: center;
+}
+.newBtn{
+    /* border:solid green;
+    background-color:green; */
+    padding-left:16px;
+    padding-right:16px;
+    border-radius:22px;
+    text-decoration: none;
+    text-align: center;
+}
+.btnContainer{
+    /* border:solid white; */
+    display:flex;
+    padding:6px;
+    justify-content: space-evenly;
+}
+.calendarContainer{
+    border:solid black;
+    padding:1em;
+    height:98vh;
+}

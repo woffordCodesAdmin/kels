@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+<a href="/tasks"><h1>Go to Tasks</h1></a>
+
+<div class="calendarContainer">
+  <%= render @calendar %>
+
+  <div>
+    <%= link_to "Edit this calendar", edit_calendar_path(@calendar) %> | <%=
+    link_to "Back to calendars", calendars_path %> <%= button_to "Delete This
+    Entry", @calendar, method: :delete %>
+  </div>
+</div>

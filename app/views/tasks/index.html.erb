@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tasks</h1>
+<a href="/calendars"><h3>Go To Calendar</h3></a>
+<hr />
+<%= link_to "Add New task", new_task_path %>
+<div id="tasks">
+  <% @tasks.each do |task| %> <%= render task %>
+  <div class="taskContainer">
+    <p><%= link_to "Show this task", task %></p>
+  </div>
+
+  <% end %>
+</div>

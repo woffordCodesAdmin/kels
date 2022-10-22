@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 style="text-align: center">Kelly Calendar</h1>
+<hr>
+<a href="/tasks"><h3>Go To Tasks</h3></a>
+<p class="newBtn"><%= link_to "Add New Entry", new_calendar_path %></p>
+<div class="calendarContainer">
+  <div id="calendars">
+    <% @calendars.each do |calendar| %>
+    <div class="mainItem">
+      <%= render calendar %>
+
+      <div class="btnContainer">
+        <p class="showBtn"><%= link_to "Show this Day", calendar %></p>
+      </div>
+    </div>
+
+    <% end %>
+  </div>
+</div>
